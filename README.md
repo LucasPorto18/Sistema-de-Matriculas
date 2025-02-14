@@ -13,3 +13,23 @@ Gustavo Comam
 ![Captura de tela 2025-02-14 193236](https://github.com/user-attachments/assets/4bf2d086-f621-48bd-a07f-8830ea5cbea7)
 
 ## Historias de usuario
+
+### Aluno
+- [ ] Realizar Matrícula
+- [ ] Matricular em disciplinas optativas
+
+### Professor
+- [ ] Visualizar matérias
+- [ ] Visualizar alunos
+
+### Usuário (Geral)
+- [ ] Realizar Login
+- [ ] Recuperar senha
+
+### Secretaria
+- [ ] Gerenciar Cadastros
+- [ ] Criar Disciplinas
+- [ ] Gerar Currículo
+- [ ] Adicionar Usuário
+- [ ] Excluir Usuários
+- [ ] Atualizar Usuários
