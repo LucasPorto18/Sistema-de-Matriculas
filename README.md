@@ -6,6 +6,7 @@ Este repositório contém a implementação de um Sistema de Matrículas para um
 
 ## Participantes
 Lucas Porto de Andrade
+
 Gustavo Comam
 
 ## Diagrama de Casos de Uso
