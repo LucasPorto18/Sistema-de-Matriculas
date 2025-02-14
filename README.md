@@ -16,6 +16,8 @@ Gustavo Comam
 
 ### Aluno
 - [ ] Realizar Matrícula
+
+      Como aluno, quero me matricular nas disciplinas disponíveis para que eu possa cursá-las no semestre atual.
 - [ ] Matricular em disciplinas optativas
 
 ### Professor
