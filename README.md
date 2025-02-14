@@ -12,3 +12,4 @@ Gustavo Comam
 ## Diagrama de Casos de Uso
 ![Captura de tela 2025-02-14 193236](https://github.com/user-attachments/assets/4bf2d086-f621-48bd-a07f-8830ea5cbea7)
 
+## Historias de usuario
