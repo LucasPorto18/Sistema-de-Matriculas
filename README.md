@@ -18,6 +18,9 @@ Gustavo Comam
 ✅ **Realizar Matrícula**  
 Como aluno, quero me matricular nas disciplinas disponíveis para que eu possa cursá-las no semestre atual.  
 
+✅ **Matricular em disciplinas obrigatorias**  
+Como aluno, quero ser poder me matricular nas disciplinas obrigatórias do meu curso para garantir a conformidade a grade curricular.
+
 ✅ **Matricular em disciplinas optativas**  
 Como aluno, quero escolher disciplinas optativas disponíveis para complementar minha formação acadêmica.  
 
@@ -38,6 +41,9 @@ Como usuário do sistema, quero realizar login com minhas credenciais para acess
 
 ✅ **Recuperar senha**  
 Como usuário, quero recuperar minha senha caso eu a esqueça, para que eu possa acessar o sistema novamente.  
+
+✅ **Gerenciar Dados**
+Como usuário, quero gerenciar meus dados cadastrais para mantê-los sempre atualizados.
 
 ---
 
