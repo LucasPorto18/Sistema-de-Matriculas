@@ -20,18 +20,40 @@ Gustavo Comam
       Como aluno, quero me matricular nas disciplinas disponíveis para que eu possa cursá-las no semestre atual.
 - [ ] Matricular em disciplinas optativas
 
+      Como aluno, quero escolher disciplinas optativas disponíveis para complementar minha formação acadêmica.
+
 ### Professor
 - [ ] Visualizar matérias
+
+      Como professor, quero visualizar as disciplinas que leciono para acompanhar os alunos matriculados.
 - [ ] Visualizar alunos
+
+      Como professor, quero visualizar a lista de alunos matriculados em minhas disciplinas para melhor acompanhamento acadêmico.
 
 ### Usuário (Geral)
 - [ ] Realizar Login
+
+      Como usuário do sistema, quero realizar login com minhas credenciais para acessar as funcionalidades de acordo com meu perfil.
 - [ ] Recuperar senha
+
+      Como usuário, quero recuperar minha senha caso eu a esqueça, para que eu possa acessar o sistema novamente
 
 ### Secretaria
 - [ ] Gerenciar Cadastros
+
+      Como secretário, quero gerenciar os cadastros do sistema para manter os dados de alunos, professores e disciplinas sempre atualizados.
 - [ ] Criar Disciplinas
+
+      Como secretário, quero criar novas disciplinas no sistema para que os alunos possam se matricular nelas.
 - [ ] Gerar Currículo
+
+      Como secretário, quero gerar currículos acadêmicos para que alunos e professores tenham acesso.
 - [ ] Adicionar Usuário
+
+      Como secretário, quero adicionar novos usuários ao sistema para que eles possam acessar a plataforma conforme seu perfil.
 - [ ] Excluir Usuários
+
+      Como secretário, quero excluir usuários inativos ou que não fazem mais parte da instituição para manter a base de dados atualizada.
 - [ ] Atualizar Usuários
+
+      Como secretário, quero atualizar os dados de usuários sempre que necessário para garantir que as informações estejam corretas.
