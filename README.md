@@ -14,54 +14,19 @@ Gustavo Comam
 
 ## Historias de usuario
 
-## 🎓 Aluno
-✅ **Realizar Matrícula**  
-Como aluno, quero me matricular nas disciplinas disponíveis para que eu possa cursá-las no semestre atual.  
-
-✅ **Matricular em disciplinas obrigatorias**  
-Como aluno, quero ser poder me matricular nas disciplinas obrigatórias do meu curso para garantir a conformidade a grade curricular.
-
-✅ **Matricular em disciplinas optativas**  
-Como aluno, quero escolher disciplinas optativas disponíveis para complementar minha formação acadêmica.  
-
----
-
-## 👨‍🏫 Professor
-✅ **Visualizar matérias**  
-Como professor, quero visualizar as disciplinas que leciono para acompanhar os alunos matriculados.  
-
-✅ **Visualizar alunos**  
-Como professor, quero visualizar a lista de alunos matriculados em minhas disciplinas para melhor acompanhamento acadêmico.  
-
----
-
-## 🔑 Usuário (Geral)
-✅ **Realizar Login**  
-Como usuário do sistema, quero realizar login com minhas credenciais para acessar as funcionalidades de acordo com meu perfil.  
-
-✅ **Recuperar senha**  
-Como usuário, quero recuperar minha senha caso eu a esqueça, para que eu possa acessar o sistema novamente.  
-
-✅ **Gerenciar Dados**
-Como usuário, quero gerenciar meus dados cadastrais para mantê-los sempre atualizados.
-
----
-
-## 🏫 Secretaria
-✅ **Gerenciar Cadastros**  
-Como secretário, quero gerenciar os cadastros do sistema para manter os dados de alunos, professores e disciplinas sempre atualizados.  
-
-✅ **Criar Disciplinas**  
-Como secretário, quero criar novas disciplinas no sistema para que os alunos possam se matricular nelas.  
-
-✅ **Gerar Currículo**  
-Como secretário, quero gerar currículos acadêmicos para que alunos e professores tenham acesso.  
-
-✅ **Adicionar Usuário**  
-Como secretário, quero adicionar novos usuários ao sistema para que eles possam acessar a plataforma conforme seu perfil.  
-
-✅ **Excluir Usuários**  
-Como secretário, quero excluir usuários inativos ou que não fazem mais parte da instituição para manter a base de dados atualizada.  
-
-✅ **Atualizar Usuários**  
-Como secretário, quero atualizar os dados de usuários sempre que necessário para garantir que as informações estejam corretas.  
+| **ID** | **Ator**             | **História de Usuário**                                                                                                                                           |
+|--------|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1      | Secretaria           | Como secretário, quero gerenciar os cadastros do sistema para manter os dados de alunos, professores e disciplinas sempre atualizados. |
+| 2      | Secretaria           | Como secretário, quero criar novas disciplinas no sistema para que os alunos possam se matricular nelas. |
+| 3      | Secretaria           | Como secretário, quero gerar currículos acadêmicos para que alunos e professores tenham acesso. |
+| 4      | Secretaria           | Como secretário, quero adicionar novos usuários ao sistema para que eles possam acessar a plataforma conforme seu perfil. |
+| 5      | Secretaria           | Como secretário, quero excluir usuários inativos ou que não fazem mais parte da instituição para manter a base de dados atualizada. |
+| 6      | Secretaria           | Como secretário, quero atualizar os dados de usuários sempre que necessário para garantir que as informações estejam corretas. |
+| 7      | Aluno                | Como aluno, quero me matricular nas disciplinas disponíveis para que eu possa cursá-las no semestre atual. |
+| 8      | Aluno                | Como aluno, quero ser poder me matricular nas disciplinas obrigatórias do meu curso para garantir a conformidade a grade curricular. |
+| 9      | Aluno                | Como aluno, quero escolher disciplinas optativas disponíveis para complementar minha formação acadêmica. |
+| 10     | Professor            | Como professor, quero visualizar as disciplinas que leciono para acompanhar os alunos matriculados. |
+| 11     | Professor            | Como professor, quero visualizar a lista de alunos matriculados em minhas disciplinas para melhor acompanhamento acadêmico. |
+| 12     | Usuário              | Como usuário do sistema, quero realizar login com minhas credenciais para acessar as funcionalidades de acordo com meu perfil. |
+| 13     | Usuário              | Como usuário, quero recuperar minha senha caso eu a esqueça, para que eu possa acessar o sistema novamente. |
+| 14     | Usuário              | Como usuário, quero gerenciar meus dados cadastrais para mantê-los sempre atualizados. |
