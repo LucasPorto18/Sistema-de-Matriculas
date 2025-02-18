@@ -30,3 +30,8 @@ Gustavo Nascimento Comam
 | 12     | Usuário              | Como usuário do sistema, quero realizar login com minhas credenciais para acessar as funcionalidades de acordo com meu perfil. |
 | 13     | Usuário              | Como usuário, quero recuperar minha senha caso eu a esqueça, para que eu possa acessar o sistema novamente. |
 | 14     | Usuário              | Como usuário, quero gerenciar meus dados cadastrais para mantê-los sempre atualizados. |
+
+
+## Diagrama de Classes
+![Class Diagram Template (Community)](https://github.com/user-attachments/assets/19dc6bd7-53a4-412d-a979-45b1003b64f9)
+
