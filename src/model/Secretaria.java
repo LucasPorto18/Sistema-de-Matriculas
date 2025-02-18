@@ -1,4 +1,4 @@
-package model;
+package Model;
 
 public class Secretaria extends Usuario {
     private int idSecretaria;
