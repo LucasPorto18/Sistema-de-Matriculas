@@ -1,12 +1,13 @@
-package Model;
+package com.example.sistemadematriculas.Model;
+
 
 public class Professor extends Usuario {
-    private int idProfessor;
+   
     private int cargaHoraria;
 
-    public Professor(int idUsuario, String nome, String cpf, String telefone, String email, String senha, String dataNascimento, int idProfessor, int cargaHoraria) {
+    public Professor(int idUsuario, String nome, String cpf, String telefone, String email, String senha, String dataNascimento, int cargaHoraria) {
         super(idUsuario, nome, cpf, telefone, email, senha, dataNascimento);
-        this.idProfessor = idProfessor;
+        
         this.cargaHoraria = cargaHoraria;
     }
 

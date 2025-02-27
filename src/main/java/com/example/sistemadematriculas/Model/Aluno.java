@@ -1,7 +1,7 @@
-package Model;
-
+package com.example.sistemadematriculas.Model;
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class Aluno extends Usuario {
 
@@ -9,7 +9,7 @@ public class Aluno extends Usuario {
     private List<Curso> cursos;
     private List<Disciplina> disciplinas;
 
-    public Aluno(int idUsuario, String nome, String cpf, String telefone, String email, String senha, String dataNascimento, int idAluno, String matricula) {
+    public Aluno( int idUsuario, String nome, String cpf, String telefone, String email, String senha, String dataNascimento, String matricula) {
         super(idUsuario, nome, cpf, telefone, email, senha, dataNascimento);
         this.matricula = matricula;
         this.cursos = new ArrayList<>();

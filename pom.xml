@@ -26,12 +26,21 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
     </dependencies>
+    <!-- Add your dependencies here -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-web</artifactId>
+    <version>5.3.10</version>
+</dependency>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                 <configuration>
+                    <mainClass>src\main\java\com\example\sistemadematriculas\sistemadematriculas.java</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>

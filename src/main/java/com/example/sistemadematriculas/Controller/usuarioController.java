@@ -1,10 +1,15 @@
-package Controller;
+package com.example.sistemadematriculas.Controller;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-import Model.Usuario;
+import com.example.sistemadematriculas.Model.Usuario;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+
 
 @Controller
 @RequestMapping("/usuarios")
@@ -13,11 +18,13 @@ public class usuarioController {
     
 private List<Usuario> usuarios = new ArrayList<>();
 
-
-public void cadastrarUsuario(String nome, String cpf, String telefone, String email, String senha, String dataNascimento) {
-    UUID id = UUID.randomUUID();
+@PostMapping("/cadastrar")
+@ResponseBody
+public void cadastrarUsuario(@RequestMapping int id, @RequestParam String nome,@RequestParam  String cpf,@RequestParam  String telefone, String email,@RequestParam  String senha,@RequestParam  String dataNascimento) {
+    
  Usuario usuario = new Usuario(id, nome, cpf, telefone, email, senha, dataNascimento);
- usuarios.add(usuario);}
+ usuarios.add(usuario);
+}
 
  
 

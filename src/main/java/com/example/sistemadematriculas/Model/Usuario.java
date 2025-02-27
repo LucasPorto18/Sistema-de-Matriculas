@@ -1,10 +1,10 @@
-package Model;
-import java.util.UUID;
+package com.example.sistemadematriculas.Model;
+
 
 
 
 public class Usuario {
-    protected UUID idUsuario;
+    protected int idUsuario;
     protected String nome;
     protected String cpf;
     protected String telefone;
@@ -12,8 +12,8 @@ public class Usuario {
     protected String senha;
     protected String dataNascimento;
 
-  public Usuario(UUID id, String nome, String cpf, String telefone, String email, String senha, String dataNascimento) {
-        this.idUsuario = id;
+  public Usuario(int idUsuario, String nome, String cpf, String telefone, String email, String senha, String dataNascimento) {
+        this.idUsuario = idUsuario;
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
@@ -22,11 +22,11 @@ public class Usuario {
         this.dataNascimento = dataNascimento;
     }
 
-    public UUID getIdUsuario() {
+    public int getIdUsuario() {
         return idUsuario;
     }
 
-    public void setIdUsuario(UUID idUsuario) {
+    public void setIdUsuario(int idUsuario) {
         this.idUsuario = idUsuario;
     }
 

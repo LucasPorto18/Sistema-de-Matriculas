@@ -1,11 +1,12 @@
-package Model;
+package com.example.sistemadematriculas.Model;
+
 
 public class Secretaria extends Usuario {
-    private int idSecretaria;
+  
 
-    public Secretaria(int idUsuario, String nome, String cpf, String telefone, String email, String senha, String dataNascimento, int idSecretaria) {
+    public Secretaria(int idUsuario, String nome, String cpf, String telefone, String email, String senha, String dataNascimento) {
         super(idUsuario, nome, cpf, telefone, email, senha, dataNascimento);
-        this.idSecretaria = idSecretaria;
+        
     }
 
     public void gerarCurriculo(int idAluno) {
@@ -16,12 +17,12 @@ public class Secretaria extends Usuario {
         System.out.println("Cadastrando aluno...");
     }
 
-    public void cadastrarProfessor(  int idProfessor,
+    public void cadastrarProfessor( 
  int cargaHoraria) {
         System.out.println("Cadastrando professor...");
     }
 
-    public void criarDisciplina(String nome, String status, int idProfessor,String tipoDisciplina) {
+    public void criarDisciplina(String nome, String status,String tipoDisciplina) {
         System.out.println("Criando disciplina...");
     }
 

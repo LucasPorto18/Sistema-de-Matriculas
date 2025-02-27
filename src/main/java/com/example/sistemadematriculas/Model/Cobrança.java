@@ -1,4 +1,4 @@
-package Model;
+package com.example.sistemadematriculas.Model;
 
 public class Cobrança {
     private int idCobranca;
