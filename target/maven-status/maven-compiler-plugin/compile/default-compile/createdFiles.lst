@@ -1,2 +1,11 @@
-Model\Curso.class
 Model\Disciplina.class
+com\example\sistemadematriculas\Model\Curso.class
+com\example\sistemadematriculas\Model\Cobrança.class
+com\example\sistemadematriculas\Model\Professor.class
+com\example\sistemadematriculas\Controller\usuarioController.class
+com\example\sistemadematriculas\Model\Aluno.class
+com\example\sistemadematriculas\Model\Disciplina.class
+com\example\sistemadematriculas\Model\Usuario.class
+Model\Curso.class
+com\example\sistemadematriculas\Model\matricula.class
+com\example\sistemadematriculas\Model\Secretaria.class
