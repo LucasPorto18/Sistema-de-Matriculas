@@ -1,7 +1,6 @@
 package com.example.sistemadematriculas.Controller;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 import com.example.sistemadematriculas.Model.Usuario;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,7 +19,7 @@ private List<Usuario> usuarios = new ArrayList<>();
 
 @PostMapping("/cadastrar")
 @ResponseBody
-public void cadastrarUsuario(@RequestMapping int id, @RequestParam String nome,@RequestParam  String cpf,@RequestParam  String telefone, String email,@RequestParam  String senha,@RequestParam  String dataNascimento) {
+public void cadastrarUsuario(@RequestParam int id, @RequestParam String nome,@RequestParam  String cpf,@RequestParam  String telefone, String email,@RequestParam  String senha,@RequestParam  String dataNascimento) {
     
  Usuario usuario = new Usuario(id, nome, cpf, telefone, email, senha, dataNascimento);
  usuarios.add(usuario);
