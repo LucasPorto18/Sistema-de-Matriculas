@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Alunos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Gestão de Alunos</h1>
+
+        
+        <div class="card mt-4">
+            <div class="card-header">
+                <h2>Matrícula de Aluno</h2>
+            </div>
+            <div class="card-body">
+                <form id="matriculaAlunoForm">
+                    <div class="mb-3">
+                        <label for="nomeAluno" class="form-label">Nome do Aluno</label>
+                        <input type="text" class="form-control" id="nomeAluno" placeholder="Digite o nome do aluno" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nomeCurso" class="form-label">Nome do Curso</label>
+                        <input type="text" class="form-control" id="nomeCurso" placeholder="Digite o nome do curso" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nomeDisciplina" class="form-label">Nome da Disciplina</label>
+                        <input type="text" class="form-control" id="nomeDisciplina" placeholder="Digite o nome da disciplina" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Matricular</button>
+                </form>
+            </div>
+        </div>
+
+        
+        <div class="card mt-4">
+            <div class="card-header">
+                <h2>Cancelar Disciplina</h2>
+            </div>
+            <div class="card-body">
+                <form id="cancelarDisciplinaForm">
+                    <div class="mb-3">
+                        <label for="nomeAlunoCancelamento" class="form-label">Nome do Aluno</label>
+                        <input type="text" class="form-control" id="nomeAlunoCancelamento" placeholder="Digite o nome do aluno" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nomeCursoCancelamento" class="form-label">Nome do Curso</label>
+                        <input type="text" class="form-control" id="nomeCursoCancelamento" placeholder="Digite o nome do curso" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nomeDisciplinaCancelamento" class="form-label">Nome da Disciplina</label>
+                        <input type="text" class="form-control" id="nomeDisciplinaCancelamento" placeholder="Digite o nome da disciplina" required>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Cancelar</button>
+                </form>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-header">
+            <h2>Disciplinas Matriculadas</h2>
+            </div>
+            <div class="card-body">
+            <form id="verDisciplinasForm">
+                <div class="mb-3">
+                <label for="nomeAlunoInput" class="form-label">Nome do Aluno</label>
+                <input type="text" class="form-control" id="nomeAlunoInput" placeholder="Digite o nome do aluno" required>
+                </div>
+                <button type="submit" id="verDisciplinasButton" class="btn btn-info">Ver Disciplinas Matriculadas</button>
+            </form>
+            <div id="disciplinas-aluno-container" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/Curso.js"></script>
+    <script type="module">
+        import {matriculaAluno, cancelarDisciplinaAluno, mostrarDisciplinasAluno} from "../dist/Curso.js"
+        const matriculaAlunoForm = document.getElementById("matriculaAlunoForm");
+    const cancelarDisciplinaForm = document.getElementById("cancelarDisciplinaForm");
+
+   
+    matriculaAlunoForm.addEventListener("submit", function (event) {
+        event.preventDefault(); 
+        const nomeAluno = document.getElementById("nomeAluno").value;
+        const nomeCurso = document.getElementById("nomeCurso").value;
+        const nomeDisciplina = document.getElementById("nomeDisciplina").value;
+   matriculaAluno(nomeAluno, nomeCurso, nomeDisciplina);
+            alert("Matrícula realizada com sucesso!");
+          
+       
+    });
+
+    cancelarDisciplinaForm.addEventListener("submit", function (event) {
+        event.preventDefault(); 
+
+       
+        const nomeAluno = document.getElementById("nomeAlunoCancelamento").value;
+        const nomeCurso = document.getElementById("nomeCursoCancelamento").value;
+        const nomeDisciplina = document.getElementById("nomeDisciplinaCancelamento").value;
+   cancelarDisciplinaAluno(nomeAluno, nomeCurso, nomeDisciplina);
+     alert("Disciplina cancelada com sucesso!");
+          
+        
+    });
+
+
+document.getElementById("verDisciplinasForm").addEventListener("submit",function(event){
+    event.preventDefault(); 
+let nomeAluno = document.getElementById("nomeAlunoInput").value
+mostrarDisciplinasAluno(nomeAluno)
+})
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página do Professor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Área do Professor</h1>
+       <!-- Botão para mostrar disciplinas -->
+       <div class="row mt-4">
+        <div class="col-12 text-center">
+            <button class="btn btn-info" id="mostrarCursos">Mostrar Cursos</button>
+        </div>
+    </div>
+
+    <!-- Área para exibir as disciplinas -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div id="cursos-container" class="p-3 border rounded bg-light">
+                <!-- As disciplinas serão exibidas aqui -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulário para buscar alunos matriculados -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h3 class="text-center">Buscar Alunos Matriculados</h3>
+            <form id="buscarAlunos">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Nome da Curso</span>
+                    <input type="text" class="form-control" placeholder="Nome do Curso" id="nome_curso_buscar" required>
+                    <span class="input-group-text">Nome da Disciplina</span>
+                    <input type="text" class="form-control" placeholder="Nome da Disciplina" id="nome_disciplina_buscar" required>
+                </div>
+                <button class="btn btn-success w-100" type="submit" id="buscarAlunosBtn">Buscar Alunos</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Área para exibir os alunos -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div id="alunos-container" class="p-3 border rounded bg-light">
+                <!-- Os alunos serão exibidos aqui -->
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+ <script  src="../dist/Curso.js"></script>
+<script type="module">
+    import { mostrarCursos, verAlunosDisciplina } from "../dist/Curso.js";
+    document.getElementById("buscarAlunos").addEventListener("submit",function(event){
+            event.preventDefault();
+            let nome_curso_buscar = document.getElementById("nome_curso_buscar").value
+            let nome_disciplina_buscar = document.getElementById("nome_disciplina_buscar").value
+            verAlunosDisciplina(nome_curso_buscar,nome_disciplina_buscar)
+        })
+
+       
+        document.getElementById("mostrarCursos").addEventListener("click", function() {
+             mostrarCursos()
+        });
+</script>
+</body>
+</html>
